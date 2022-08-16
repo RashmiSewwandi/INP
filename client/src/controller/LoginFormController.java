@@ -20,18 +20,17 @@ public class LoginFormController {
 
 
     public void logInOnAction(ActionEvent actionEvent) throws IOException {
-        if (txtUserName.getText().equals("client1") && txtPassword.getText().equals("1234")) {
+       /* if (txtUserName.getText().equals("client1") && txtPassword.getText().equals("1234")) {
             Stage stage = new Stage();
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm1.fxml"))));
             stage.setTitle("Play Tech Chat App  - Client Chat 01");
-            stage.show();
-        /*if (txtUserName.getText().equals("client1") && txtPassword.getText().equals("1234")) {
+            stage.show();*/
+        if (txtUserName.getText().equals("client1") && txtPassword.getText().equals("1234")) {
             Stage stage = new Stage();
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/ClientForm1.fxml"))));
             stage.setTitle("Play Tech Chat App  - Client Chat ");
             stage.show();
-*/
-       /* } else if (txtUserName.getText().equals("client2") && txtPassword.getText().equals("1234")) {
+        } else if (txtUserName.getText().equals("client2") && txtPassword.getText().equals("1234")) {
             Stage stage = new Stage();
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm2.fxml"))));
             stage.setTitle("Play Tech Chat App  - Client Chat 01");
@@ -41,7 +40,7 @@ public class LoginFormController {
             Stage stage = new Stage();
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm3.fxml"))));
             stage.setTitle("Play Tech Chat App  - Client Chat 02");
-            stage.show();*/
+            stage.show();
         } else {
             new Alert(Alert.AlertType.ERROR, "Please Try Again").show();
         }
