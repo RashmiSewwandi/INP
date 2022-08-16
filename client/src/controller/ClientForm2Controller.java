@@ -41,6 +41,7 @@ public class ClientForm2Controller {
         String reply = "";
         reply = txtClientOne.getText();
         txtClientArea1.appendText(("\t\t\t\t\t\t\t\t ClientTwo:" + reply.trim()));
+
         dataOutputStream.writeUTF(reply);
         txtClientOne.setText("");
     }

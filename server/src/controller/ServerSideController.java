@@ -33,7 +33,9 @@ public class ServerSideController {
 
                 while (!messageIn.equals("end")) {
                     messageIn = dataInputStream.readUTF();
-                    txtServerArea1.appendText("\nClient:" + messageIn.trim() + "\n");
+                    txtServerArea1.appendText("\nClient1:" + messageIn.trim() + "\n");
+                    txtServerArea1.appendText("\nClient2:" + messageIn.trim() + "\n");
+                    txtServerArea1.appendText("\nClient3:" + messageIn.trim() + "\n");
                 }
             } catch (IOException e) {
                 throw new RuntimeException(e);
